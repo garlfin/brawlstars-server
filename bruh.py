@@ -80,7 +80,7 @@ def handler(c, a):
                     print('Refused connection.')
                     c.send(extract.sendUpdateAvailable(
                         "You don't have the latest version of Garlfin Stars! Click to download the update.",
-                        'https://github.com/garlfin/dae2scw'))
+                        'https://github.com/garlfin/brawlstars-server'))
             elif extract.byteToInt(data) == 10108:
                 print('Keeping alive',userid,'.')
                 c.send(extract.keepAlive())
